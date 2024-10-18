@@ -10,9 +10,6 @@ services:
     build: 
       context: ./backend
     container_name: backend
-    volumes:
-      - ./backend:/backend
-      - /backend/node_modules
     ports:
       - "3000:3000"
     depends_on:

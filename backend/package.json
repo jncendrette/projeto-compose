@@ -5,6 +5,7 @@
   "main": "app.mjs",
   "type": "module",
   "dependencies": {
+    "cors": "^1.0.1",
     "express": "^4.21.1",
     "mongodb": "^3.6.4"
   }
