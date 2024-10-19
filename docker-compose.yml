@@ -23,8 +23,14 @@ services:
       - ./frontend:/usr/share/nginx/html
     ports:
       - "8000:80"
+    networks:
+      - app-node-net
     depends_on:
       - backend
+
+networks:
+  app-node-net:
+    driver: bridge
       
 
 
